@@ -38,6 +38,34 @@ alu6462@cloud:/etc/nginx/sites-enabled$
 
 ![salida de comandos consola](img/1_imw.png)
 
-## Editar la pagina
+## 2.- Editar la pagina
 
-Una vez creada la location series debemos 
+Una vez creada la location `series` debemos añadir un index.html para modificar el contenido de la pagina.
+
+![salida de comandos consola](img/3_imw.png)
+
+>Por otro lado vamos a crear la carpeta `img` donde alojaremos las imagenes de nuestra pagina
+
+* Dentro del `index.html` pondremos lo siguiente:
+
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Series preferidas</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
+<body>
+        <h1>Series</h1>
+            <a title="Serie 1" href="https://www.imdb.com/title/tt3107288/?ref_=nv_sr_1?ref_=nv_sr_1"><img src="img/the_flash.jpg" alt="The Flash" /></a>
+            <a title="Serie 2" href="https://www.imdb.com/title/tt0436992/?ref_=nv_sr_1?ref_=nv_sr_1"><img src="img/doctor_who.jpg" alt="Doctor Who" /></a>
+            <a title="Serie 3" href="https://www.imdb.com/title/tt4052886/?ref_=nv_sr_2?ref_=nv_sr_2"><img src="img/lucyfer.jpg" alt="Lucifer" /></a>
+            <a title="Serie 4" href="https://www.imdb.com/title/tt0182576/?ref_=nv_sr_1?ref_=nv_sr_1"><img src="img/family_guy.jpg" alt="Family Guy" /></a>
+            <a title="Serie 5" href="https://www.imdb.com/title/tt1355642/?ref_=nv_sr_1?ref_=nv_sr_1"><img src="img/metal.jpg" alt="Fullmetal Alchemist: Brotherhood" /></a>
+</body>
+</html>
+```
+* Las imagenes de las series como los enlaces y el listado fueron sacados de la pagina https://wwww.imdb.com.
