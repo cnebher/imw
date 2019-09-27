@@ -69,3 +69,9 @@ Una vez creada la location `series` debemos añadir un index.html para modificar
 </html>
 ```
 * Las imagenes de las series como los enlaces y el listado fueron sacados de la pagina https://wwww.imdb.com.
+
+## 3.- Resultado final.
+
+Completado todo lo anterior nos debe de a ver quedado la pagina de la siguiente forma:
+
+![Resultado final](img/5_imw.png)
