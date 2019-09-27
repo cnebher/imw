@@ -2,7 +2,7 @@
 
 ## 1.- Creacion de una location
 
-La pagina debe poder abrirse usando `http://alu6462.me/series/`. Para ello vamos a usar nuestro servidor web y creamos una location para el dominio.
+La pagina debe poder abrirse usando http://alu6462.me/series/. Para ello vamos a usar nuestro servidor web y creamos una location para el dominio.
 
 * Como se trata de una location dentro de un virtual host haremos lo siguiente:
 
