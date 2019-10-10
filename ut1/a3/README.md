@@ -16,7 +16,7 @@
 
 ![imw.alu6462.me_prueba](img/sitioweb1/5.png)
 
-* A continuacion nos pasaremos con el comando scp una imagen de la máquina de desarrolo  a la máquina de produccion.
+* A continuacion nos pasaremos con el comando scp una imagen de la máquina de desarrollo  a la máquina de producción.
 
 ![imw.alu6462.me_pasar_imagen](img/sitioweb1/6.png)
 
@@ -38,7 +38,7 @@
 
 ### Sitio web 2
 
-* Creamos un virtual host llamado varlib.alu6462.me el cual se escuche por el puerto 9000 y este la opcion de ***autoindex on*** para listar los archivos.
+* Creamos un virtual host llamado varlib.alu6462.me el cual se escuche por el puerto 9000 y este la opción de ***autoindex on*** para listar los archivos.
 
 ![varlib.alu6462.me_1](img/sitioweb2/1.png)
 
@@ -50,11 +50,9 @@
 
 ![varlib.alu6462.me_3](img/sitioweb2/4.png)
 
-![varlib.alu6462.me_4_final](img/sitioweb2/5.png)
+![varlib.alu6462.me_4_final](img/sitioweb2/5.png) ### Sitio web 3
 
-### Sitio web 3
-
-* Para empezar vamos a crear un virtual host llamado ssl.alu6462.me y su location. Estará dentro de la carpeta **/etc/nginx/sites-available/ssl.alu6462.me**. Enlazaremos a la carpeta **/etc/nginx/sites-enabled** y recargaremos la configuracion de nginx.
+* Para empezar vamos a crear un virtual host llamado ssl.alu6462.me y su location. Estará dentro de la carpeta **/etc/nginx/sites-available/ssl.alu6462.me**. Enlazaremos a la carpeta **/etc/nginx/sites-enabled** y recargaremos la configuración de nginx.
 
 ![ssl.alu6462.me_1](img/sitioweb3/1.png)
 
@@ -80,14 +78,38 @@
 
 ![ssl.alu6462.me_9](img/sitioweb3/9.png)
 
-* Se prohibira el acceso al fichero .htpasswd creando una constraseña y un usuario. El usuario sera admim. Se realizarioa de la siguiente forma:
+* Se prohibira el acceso al fichero .htpasswd creando una constraseña y un usuario. El usuario sera admim. Se realizara de la siguiente forma:
 
 ![ssl.alu6462.me_10](img/sitioweb3/12.png)
 
 >Añadimos tambien dos lineas al archivo donde creamos el virtual host
 
-![ssl.alu6462.me_9](img/sitioweb3/11.png)
+![ssl.alu6462.me_9_final](img/sitioweb3/11.png)
 
 ### Sitio web 4
 
-* Primeramente nos descargamos
+* Primeramente nos descargamos un archivo de github usando wget(Previamente descargado).
+
+![ssl.alu6462.me_1](img/sitioweb4/1.png)
+
+* Luego lo descomprimes usando unzip y lo guardas dentro de webapps.
+
+![ssl.alu6462.me_3](img/sitioweb4/3.png)
+
+![ssl.alu6462.me_4](img/sitioweb4/4.png)
+>Al paso anterior hay que crear una virtual host llamada http://target.alu6462.me
+* Reiniciamos el servicio nginx:
+
+![redirect.alu6462.me_5](img/sitioweb4/5.png)
+
+* Creamos la carpeta /var/log/nginx/redirect para que no nos de fallo en lo siguiente que vamos a hacer:
+
+![redirect.alu6462.me_6](img/sitioweb4/6.png)
+
+* Finalmente creamos un virtual host que redireccione con el anterior creado, para ello debe de escuchar por el puerto 80 y tener salida por el 301. Además de tener que guardar los error en la ruta especifica que nosotros le marcamos.
+
+![redirect.alu6462.me_5](img/sitioweb4/7.png)
+
+* Reiniciamos el servivio y una vez comprobado que redirige a donde queremos miramos si ha ocurrido algún error durante el proceso.
+
+![redirect.alu6462.me_8](img/sitioweb4/8.png) ![redirect.alu6462.me_9_final](img/sitioweb4/9.png)
