@@ -34,7 +34,9 @@ index index.php
 
 ~~~console
 ---
-location ~ \.php {    include snippets/fastcgi-php.conf;    fastcgi_pass unix:/run/php/php7.2-fpm.sock;}
+location ~ \.php {    
+  include snippets/fastcgi-php.conf;    
+  fastcgi_pass unix:/run/php/php7.2-fpm.sock;}
 ---
 ~~~
 
