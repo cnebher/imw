@@ -14,7 +14,11 @@
 
 ![mv](img/sitioweb1_3.png)
 
-> El archivo **demo_php.zip** sigue ubicado en **/home/alu6462**, lo que movemos al directorio **/home/alu6462/webapps** es el directorio **demo_php** #### 1.2 - Crear virtual host * En primer lugar vamos a crear una virtual host llamda *php.alu6462.me*. Para ello creamos dentro del directorio **/etc/nginx/sites-available** el siguinte archivo:
+> El archivo **demo_php.zip** sigue ubicado en **/home/alu6462**, lo que movemos al directorio **/home/alu6462/webapps** es el directorio **demo_php**
+
+#### 1.2 - Crear virtual host
+
+* En primer lugar vamos a crear una virtual host llamda *php.alu6462.me*. Para ello creamos dentro del directorio **/etc/nginx/sites-available** el siguinte archivo:
 
 ![sites-available](img/sitioweb1_5.png)
 
