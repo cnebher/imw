@@ -13,8 +13,8 @@ print('(', pointx1, ',', pointy1, ')')
 print('(', pointx2, ',', pointy2, ')')
 print('(', pointx3, ',', pointy3, ')')
 
-d1 = sqrt((pointx1 - pointx2) ** 2 + (pointy1 - pointy2) ** 2)
-d2 = sqrt((pointx1 - pointx3) ** 2 + (pointy1 - pointy3) ** 2)
+d1 = float(sqrt((pointx1 - pointx2) ** 2 + (pointy1 - pointy2) ** 2))
+d2 = float(sqrt((pointx1 - pointx3) ** 2 + (pointy1 - pointy3) ** 2))
 
 print('')
 
