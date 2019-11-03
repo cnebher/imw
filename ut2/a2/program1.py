@@ -1,4 +1,5 @@
 import sys
+import crayons
 from math import sqrt
 
 dataa, datab, datac = int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3])
@@ -11,7 +12,7 @@ print(datac)
 print('Debe dar las soluciones: ')
 
 if (datab ** 2) - (4*dataa*datac) < 0:
-    print('No tiene solucion real')
+    print(crayons.red('No tiene solucion real'))
 elif dataa != 0:
     solutionx1 = (- datab + sqrt(datab ** 2 - 4 * dataa * datac)) / (2 * dataa)
     solutionx2 = (- datab - sqrt(datab ** 2 - 4 * dataa * datac)) / (2 * dataa)
