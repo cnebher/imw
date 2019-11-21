@@ -10,8 +10,8 @@ if wordnumber < 0:
 else:
     if wordnumber > 0 :
         word_as_list = word_as_list.split()
-        for i in word_as_list:
-            if len(i) == wordnumber:
+        for words in word_as_list:
+            if len(words) == wordnumber:
                 count_words += 1
 
     print(f'Hay {count_words} palabra(s) de tamaño {wordnumber}')
