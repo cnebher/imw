@@ -10,10 +10,14 @@ def num_vowels(text):
 # 2 numero de espacios
 def num_whitespaces(text):
     num_whitespaces = 0
-    for char in text.split():
-        if char in ' ':
+    for char in text:
+        if char == ' ':
             num_whitespaces += 1
     return num_whitespaces
+# 3 numero de digitos
+def num_digits(text):
+
+
 # 4 invertir palabras
 def reverse(text):
     text = text[::-1]
