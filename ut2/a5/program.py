@@ -16,15 +16,14 @@ def num_whitespaces(text):
 
 def num_digits(text):
     num_digits = 0
-    for char in text:
-        if char.isdigit():
+    for digit in text:
+        if digit.isdigit():
             num_digits += 1
     return num_digits
 
 def num_words(text):
     text_list = text.split()
     num_words = len(text_list)
-
     return num_words
 
 def reverse(text):
@@ -37,19 +36,18 @@ def length(text):
 
 def halfs(text):
     text_lenght = len(text)
-    if text_lenght >= 2:
-         mid = text_lenght // 2
-         first = text[:mid]
-         second = text[mid:]
+    half = text_lenght // 2
+    first = text[:half]
+    second = text[half:]
     return ' | '.join([first, second])
 
 def upper_vowels(text):
     vocals = ""
-    for char in text:
-        if char.upper() in "AEIOU":
-            vocals += char.upper()
+    for words in text:
+        if words.upper() in "AEIOU":
+            vocals += words.upper()
         else:
-            vocals += char
+            vocals += words
     return vocals
 
 def sorted_by_words(text):
@@ -59,12 +57,12 @@ def sorted_by_words(text):
     return sorted_by_words
 
 def length_of_words(text):
-    mylist = []
+    number_of_words = []
     text_lenght = text.split()
     for word in text_lenght:
-        mylist.append(str(len(word)))
-    text_string = ' '.join(mylist)
-    return text_string
+        number_of_words.append(str(len(word)))
+    length_of_words = ' '.join(number_of_words)
+    return length_of_words
 if __name__ == '__main__':
     text = sys.argv[1]
     print('Number of vowels:', num_vowels(text))
