@@ -21,7 +21,7 @@ class VirtualMachine:
     def reboot(self):
         self.stop()
         self.start()
-
+ 
     def run(self, pid, ram, cpu, hdd):
         self.proc.append({'pid': pid, 'ram': ram, 'cpu': cpu, 'hdd': hdd})
 
@@ -64,7 +64,7 @@ class VirtualMachine:
             self.hdd_usage()
         )
 if __name__ == '__main__':
-    
+
     minas_tirith = VirtualMachine('Minas Tirith', 8, 2.3, 380, 'ubuntu')
     print(minas_tirith)
     minas_tirith.start()
