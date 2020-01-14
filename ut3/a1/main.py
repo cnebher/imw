@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from flask import render_template
 from flask import redirect
@@ -36,6 +37,9 @@ def run_process():
         return redirect('/')
     else:
         return render_template('run_process.html')
-
+@app.route("/reset_supervisor")
+def reset_supervisor():
+    os.system('supervisorctl restart vmweb')
+    return redirect("/")
 if __name__ == "__main__":
     app.run(debug=True)
