@@ -2,9 +2,6 @@
 
 ### 1.- Instalación de Wordpress.
 
-
-
-
 ### 2.- Tema gratuito.
 
 ### 3.- Permalinks *Día y Nombre*.
