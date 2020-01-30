@@ -2,11 +2,11 @@
 
 A continuación vamos a hacer un anlisis de los siguientes Plugins para Wordpress:
 
-| Plugins        |
-|----------------|
-| BackWPup – WordPress Backup Plugin           |
-| WPS Hide Login |
-| WP-PageNavi    |
+| Plugins                            |
+|------------------------------------|
+| BackWPup – WordPress Backup Plugin |
+| WPS Hide Login                     |
+| WP-PageNavi                        |
 
 ## BackWPup – WordPress Backup Plugin.
 
@@ -73,20 +73,26 @@ muchos más. Puedes restaurar facilmente una instalación con un
 
 ###### Descripción.
 
-* Este *plugin* dispone de la etiqueta de plantilla **wp_pagenavi ()** que genera enlaces de paginación amigables.
+* Este *plugin* genera enlaces de paginación amigables.
 
 ###### Tipo de páginas en las que sería útil.
 
-El plugin instalado sería útil en sitios web donde el contenido de páginas fuera muy elevado e hiciera falta una mejor visualizacion.
+* El *plugin* instalado sería útil en sitios web donde el contenido de páginas fuera muy elevado e hiciera falta una mejor visualización.
 
 ###### Widgets asociados.
 
-
+* No tiene ningún *widgets* asociado.
 
 ###### Requerimientos/Dependencias.
 
+* Requiere que se modifique una linea de configuración del archivo *footer.php* del tema actual que se este usando.
 
+![footer.php](img/3.png)
 
 ###### Facilidad de instalación/activación.
 
+* Medianamente fácil de instalar(3/5).
+
 ###### Facilidad de uso.
+
+* Fácil de usar(4/5).
