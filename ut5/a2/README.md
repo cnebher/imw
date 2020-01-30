@@ -85,9 +85,9 @@ muchos más. Puedes restaurar facilmente una instalación con un
 
 ###### Requerimientos/Dependencias.
 
-* Requiere que se modifique una linea de configuración del archivo *footer.php* del tema actual que se este usando.
+* Requiere que se modifique una linea de configuración del archivo *loop.php* del tema actual que se este usando.
 
-![footer.php](img/3.png)
+![loop.php](img/3.png)
 
 ###### Facilidad de instalación/activación.
 
