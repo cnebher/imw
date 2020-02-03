@@ -33,11 +33,11 @@ muchos más. Puedes restaurar facilmente una instalación con un
 
 ###### Facilidad de instalación/activación.
 
-* Es fácil y rápido de instalar siempre y cuando tengas los requerimientos que se especifican(4/5).
+* Es fácil y rápido de instalar siempre y cuando tengas los requerimientos que se especifican(5/5).
 
 ###### Facilidad de uso.
 
-* Fácil de usar y programable para que haga las *copias de seguridad* por ti(4/5).
+* Fácil de usar y programable para que haga las *copias de seguridad* por ti(5/5).
 
 ![tarea](img/1.png)
 
@@ -91,8 +91,8 @@ muchos más. Puedes restaurar facilmente una instalación con un
 
 ###### Facilidad de instalación/activación.
 
-* Medianamente fácil de instalar(3/5).
+* Facil de instalar(4/5).
 
 ###### Facilidad de uso.
 
-* Fácil de usar(4/5).
+* Complicaciones al encontrar el archivo *loop.php*(3/5).
