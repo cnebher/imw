@@ -51,7 +51,7 @@ muchos más. Puedes restaurar facilmente una instalación con un
 
 ###### Tipo de páginas en las que sería útil.
 
-* Esta función sería útil en páginas que buscaran algo más de seguridad en los inicios de sesión de los usuarios.
+* Esta función es útil en páginas que buscan más seguridad en la página del formulario de inicio de sesión.
 
 ###### Widgets asociados.
 
