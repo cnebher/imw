@@ -6,19 +6,33 @@
     </head>
     <body>
         <?php
-            $nombre = $_POST["nombre"];
-            $apellidos = $_POST["apellidos"];
-            $salario = $_POST["salario"];
-            $edad = $_POST["edad"];
+            $name = $_POST["name"];
+            $surnames = $_POST["surnames"];
+            $salary = $_POST["salary"];
+            $age = $_POST["age"];
 
-            if ($salario => 1000 and $salario =< 2000){
-              if ($edad > 45){
-                $salario = $salario * 1,03
+            if ($salary > 1000 and $salary <= 2000){
+              if ($age > 45){
+                $salary = $salary + ($salary * 3 / 100);
+              }
+              elseif ($age <= 45){
+                $salary = $salary + ($salary * 10 / 100);
               }
             }
-            echo ("Hola $nombre\n");
-            echo ("$apellidos!\n");
-            echo ("Su salario es: $salario €");
+            if ($salary <= 1000){
+              if($age < 30){
+                $salary = 1100;
+              }
+              elseif ($age >= 30 and $age <= 45){
+                $salary = $salary + ($salary * 3 / 100);
+              }
+              elseif ($age > 45){
+                $salary = $salary + ($salary * 15 / 100);
+              }
+            }
+            echo ("Hola $name\n");
+            echo ("$surnames!\n");
+            echo ("Su salary es: $salary €");
         ?>
     </body>
 </html>

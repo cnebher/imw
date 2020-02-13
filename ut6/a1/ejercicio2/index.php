@@ -6,10 +6,10 @@
     </head>
     <body>
         <form action="files/process.php" method="post">
-        Nombre: <input type="text" name="nombre"><br>
-        Apellidos: <input type="text" name="apellidos"><br>
-        Salario: <input type="text" name="salario"><br>
-        Edad: <input type="text" name="edad"><br>
+        Nombre: <input type="text" name="name"><br>
+        Apellidos: <input type="text" name="surnames"><br>
+        Salario: <input type="text" name="salary"><br>
+        Edad: <input type="text" name="age"><br>
         <input type="submit" value="Enviar">
         </form>
     </body>
