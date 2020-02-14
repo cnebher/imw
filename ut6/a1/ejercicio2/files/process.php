@@ -32,7 +32,7 @@
             }
             echo ("Hola $name\n");
             echo ("$surnames!\n");
-            echo ("Su salary es: $salary €");
+            echo ("Su salario es: $salary €");
         ?>
     </body>
 </html>
